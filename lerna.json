@@ -1,0 +1,24 @@
+{
+  "version": "4.3.0",
+  "packages": [
+    "packages/*"
+  ],
+  "npmClient": "pnpm",
+  "changelog": {
+    "repo": "uport-project/veramo",
+    "cacheDir": ".changelog"
+  },
+  "command": {
+    "publish": {
+      "allowBranch": [
+        "main",
+        "next",
+        "master"
+      ],
+      "conventionalCommits": true,
+      "gitRemote": "origin",
+      "message": "chore(release): %s [skip ci]"
+    }
+  },
+  "useWorkspaces": true
+}
